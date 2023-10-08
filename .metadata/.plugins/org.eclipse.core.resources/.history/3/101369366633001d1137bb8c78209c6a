@@ -1,0 +1,14 @@
+package Apitesting.Apiproject;
+
+import io.restassured.RestAssured;
+
+public class httppractice1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		  RestAssured.baseURI = "https://reqres.in/";
+		 
+		
+	}
+
+}

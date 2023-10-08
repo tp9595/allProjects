@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;logs.txt&apos; to &apos;studyglobal&apos;&#x0D;&#x0A;- Original project: &apos;28feb&apos;&#x0D;&#x0A;- Destination element: &apos;studyglobal&apos;&#x0D;&#x0A;- Original element: &apos;logs.txt&apos;" description="Copy file" destination="=studyglobal" element1="target/tushar/logs.txt" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1657769957951" units="0" version="1.0"/>
+</session>

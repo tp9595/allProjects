@@ -1,0 +1,21 @@
+package Practicemaventest;
+
+import java.sql.Driver;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+
+public class selenuiumutility {
+
+	//WebDriver driver;
+	//public static WebDriver setUp(String browser,String url)
+	{
+		
+		//WebDriver driver;
+	}
+	
+	
+	
+}

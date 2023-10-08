@@ -1,0 +1,37 @@
+package selenium;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class CalenderD {
+	
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 System.setProperty("webdriver.chrome.driver","D:/Users/akshay/Downloads/chromedriver_win32/chromedriver.exe");
+				WebDriver driver = new ChromeDriver();
+				String url = "https://demoqa.com/automation-practice-form";
+				driver.manage().window().maximize();
+				driver.get(url);
+			   // driver.manage().window().maximize();
+			    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+			    WebElement datee =driver.findElement(By.id("dateOfBirthInput"));
+			    JavascriptExecutor js =(JavascriptExecutor)driver;
+			    js.executeScript("arguments[0].scrollIntoView",datee);
+				datee.click();
+//				WebElement calender = driver.findElement(By.xpath("//*[@class='react-datepicker__year-select']"));
+//				calender.click();
+//				
+//				Select df = new Select(calender);
+//			  df.selectByVisibleText("1995");
+			    
+	}
+
+}

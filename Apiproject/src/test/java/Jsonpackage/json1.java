@@ -1,0 +1,24 @@
+package Jsonpackage;
+
+import io.restassured.path.json.JsonPath;
+
+public class json1 {
+//simple json
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String json="{\r\n"
+				+ "  \"firstname\" : \"jim\",\r\n"
+				+ "  \"lastname\" : \"brown\"\r\n"
+				+ "}";
+		
+		JsonPath jsonpath= new JsonPath(json);
+		String FirstName=jsonpath.getString("firstname");
+		System.out.println(FirstName);
+		
+		Object fname =jsonpath.get("firstname");
+		System.out.println(fname);
+		System.out.println(jsonpath.get("$"));
+
+	}
+
+}

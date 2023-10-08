@@ -1,0 +1,12 @@
+package variables;
+
+public class Exceptionalclass {
+	  
+	void testMethod()
+	{
+		int i =10;
+		int k = 1/0;
+	   System.out.println(i);
+	}
+
+}

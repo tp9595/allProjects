@@ -1,0 +1,14 @@
+package Practicemaven;
+
+import org.openqa.selenium.By;
+
+
+public class Practiceglobalsqa {
+
+	
+	
+	By userName =By.id("user-name");
+	
+
+
+}

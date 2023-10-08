@@ -1,0 +1,13 @@
+package studyglobaltest;
+
+import org.testng.annotations.Test;
+
+public class studyglobaltestcases {
+	
+	@Test
+	public void loginTest()
+	{
+		
+	}
+
+}

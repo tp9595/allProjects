@@ -1,0 +1,10 @@
+package seleniumpract;
+
+public class brokenlink {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

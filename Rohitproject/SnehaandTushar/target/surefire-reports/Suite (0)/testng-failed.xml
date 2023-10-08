@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite (0)]" parallel="tests">
+  <test thread-count="5" verbose="0" name="Zomato(failed)" parallel="tests">
+    <classes>
+      <class name="org.testNgPractice.ZomatoDropDown">
+        <methods>
+          <include name="trial"/>
+          <include name="closeDriver"/>
+          <include name="searchMenu"/>
+          <include name="browserdtail"/>
+        </methods>
+      </class> <!-- org.testNgPractice.ZomatoDropDown -->
+    </classes>
+  </test> <!-- Zomato(failed) -->
+  <test thread-count="5" verbose="0" name="Amazon(failed)" parallel="tests">
+    <classes>
+      <class name="org.testNgPractice.AmzonTrackOrder">
+        <methods>
+          <include name="amazonLogout"/>
+          <include name="initiReqData"/>
+          <include name="amazonLogin"/>
+          <include name="trackOrder"/>
+          <include name="amazon"/>
+        </methods>
+      </class> <!-- org.testNgPractice.AmzonTrackOrder -->
+    </classes>
+  </test> <!-- Amazon(failed) -->
+</suite> <!-- Failed suite [Suite (0)] -->

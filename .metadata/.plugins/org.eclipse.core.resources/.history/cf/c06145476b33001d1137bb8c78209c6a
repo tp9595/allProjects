@@ -1,0 +1,43 @@
+package Apitesting.Apiproject;
+
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.*;
+
+public class Httpmethod2 {
+
+	void postMethod()
+	{
+		String url ="https://rahulshettyacademy.com";
+		String resource ="/maps/api/place/add/json";
+		String payload ="{\r\n"
+				+ "&quot;location&quot;: {\r\n"
+				+ "&quot;lat&quot;: -38.383494,\r\n"
+				+ "&quot;lng&quot;: 33.427362\r\n"
+				+ "},\r\n"
+				+ "&quot;accuracy&quot;: 50,\r\n"
+				+ "\r\n"
+				+ "&quot;name&quot;: &quot;Frontline house&quot;,\r\n"
+				+ "&quot;phone_number&quot;: &quot;(+91) 983 893 3937&quot;,\r\n"
+				+ "&quot;address&quot;: &quot;29, side layout, cohen 09&quot;,\r\n"
+				+ "&quot;types&quot;: [\r\n"
+				+ "&quot;shoe park&quot;,\r\n"
+				+ "&quot;shop&quot;\r\n"
+				+ "],\r\n"
+				+ "&quot;website&quot;: &quot;http://google.com&quot;,\r\n"
+				+ "&quot;language&quot;: &quot;French-IN&quot;\r\n"
+				+ "}";
+		RestAssured.baseURI=url;
+		
+		
+		
+		given().queryParam(payload, "key","qaclick123").body(payload).//"key","qaclick123"
+		when().post(resource).
+		then().statusCode(200).log().all();
+		
+	}
+		public static void main(String[] args) {
+			Httpmethod2 obj = new Httpmethod2();
+			obj.postMethod();
+		}
+	
+}

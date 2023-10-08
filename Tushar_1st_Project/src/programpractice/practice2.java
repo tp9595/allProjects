@@ -1,0 +1,52 @@
+package programpractice;
+
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
+
+public class practice2 {
+	
+	public static void strFunc(String str, int i)
+	 {
+		 {
+			 if(i==str.length())
+			 return;
+			 System.out.println(str.charAt(i));
+			 strFunc(str,i+1);
+			 }
+	 }
+	
+	
+	
+	
+			 public static void main(String[] args) {
+				
+				 String str = "Hello World";
+				 strFunc(str, 0);
+					
+			 }
+			
+  
+		   
+		
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+//		String str = "Th56er4e i2s a ga55rd8en an7d i4t i3s b46ea8uti5ful";
+//		int sum = 0;
+//		for (int i = 0; i < str.length(); i++) {
+//			// System.out.println(str.charAt(i));
+//			if (Character.isDigit(str.charAt(i))) {
+//				
+//				int ab = str.charAt(i) - '0';
+//				sum = sum + ab;
+//				// System.out.println(sum);
+//			}
+//		}
+//		System.out.println(sum);
+ 
+
+}

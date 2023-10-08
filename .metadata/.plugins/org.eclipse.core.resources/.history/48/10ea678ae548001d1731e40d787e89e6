@@ -1,0 +1,48 @@
+package Jsonpackage;
+
+import io.restassured.path.json.JsonPath;
+
+public class json2 {
+//
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       String json ="{\r\n"
+       		+ "  \"email\": \"michael.lawson@reqres.in\",\r\n"
+       		+ "  \"first_name\": \"Michael\",\r\n"
+       		+ "  \"age\":25,\r\n"
+       		+ "  \"address\": {\r\n"
+       		+ "    \"flatno\": 402,\r\n"
+       		+ "    \"building\": \"ABC\",\r\n"
+       		+ "    \"streetname\": \"xyz\",\r\n"
+       		+ "    \"pincode\": 400201\r\n"
+       		+ "  },\r\n"
+       		+ "  \"last_name\": \"Lawson\",\r\n"
+       		+ "  \"salery\": 10.50,\r\n"
+       		+ "  \"married\": false\r\n"
+       		+ "}";
+   	JsonPath jsonpath= new JsonPath(json);
+   String emailid =	jsonpath.getString("email");
+   System.out.println(emailid);
+    
+ boolean gh= jsonpath.getBoolean("married");
+   System.out.println(gh);
+   
+   
+   float saler = jsonpath.getFloat("salery");
+   System.out.println(saler);
+   
+   
+   int sd =jsonpath.get("age1");
+   System.out.println(sd);
+   
+// int fg =jsonpath.getInt("address.flatno");
+// System.out.println(fg);
+//   
+//		String s ="tushar";
+//		System.out.println(Integer.parseInt(s));
+//		//if we write word in string we will get number format exception
+//		
+		
+	}
+
+}

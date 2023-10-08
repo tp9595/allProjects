@@ -1,0 +1,28 @@
+package Stringprogramprac;
+
+import java.util.HashMap;
+
+public class DuplicateOccuranceinstringprogram {
+
+	static void findduplicate(String str)
+{
+		HashMap<String, Integer> hm = new HashMap<>();
+		String[] s =str.split(" ");
+		for(String temp: s)
+		{
+			//System.out.println(temp);
+			//after hashmap apply
+			hm.put(temp, 1);
+			
+		}
+		System.out.println(hm);
+}
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		findduplicate("i m m learing java");
+	}
+
+}

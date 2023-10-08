@@ -1,0 +1,23 @@
+package variables;
+
+public class Exceptionalclass {
+	  
+	static void ArithmeticException()
+	{
+		int i =10;
+		int k = 1/0;
+	   System.out.println(i);  
+	}
+	
+	void test()
+	{
+		String s = null;
+		System.out.println(s.length());
+	}
+	public static void main(String[] args) {
+		Exceptionalclass  obj = new Exceptionalclass ();
+		obj.test();
+		
+	}
+
+}

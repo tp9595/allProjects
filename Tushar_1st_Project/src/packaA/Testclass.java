@@ -1,0 +1,72 @@
+package packaA;
+
+public  class Testclass {
+	
+	
+	public void normalmethod()
+	{
+		System.out.println("this is normal method");
+	}
+	
+	public final void finalmethod()
+	{
+		System.out.println("this is final method");
+	}
+	
+	public static void staicmethod()
+	{
+		System.out.println("this is static method");
+	}
+	
+	
+	private  void normalprivatemethod()
+	{
+		System.out.println("this is normal method");
+	}
+	
+	private final void finalprivatemethod()
+	{
+		System.out.println("this is final method");
+	}
+	
+	private  static void staicprivatemethod()
+	{
+		System.out.println("this is static method");
+	}
+	
+	
+	protected void normalprotectedmethod()
+	{
+		System.out.println("this is normal method");
+	}
+	
+	protected final void finalprotectedmethod()
+	{
+		System.out.println("this is final method");
+	}
+	
+	protected static void staicprotectedmethod()
+	{
+		System.out.println("this is static method");
+	}
+	 
+     void normaldefaultmethod()
+	{
+		System.out.println("this is normal method");
+	}
+	
+	final void finaldefaultmethod()
+	{
+		System.out.println("this is final method");
+	}
+	
+	static void staicdefaultmethod()
+	{
+		System.out.println("this is static method");
+	}
+	
+	public  static void main(String[] args) {
+		
+	}
+	
+}

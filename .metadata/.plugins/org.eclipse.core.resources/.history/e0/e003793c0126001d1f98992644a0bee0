@@ -1,0 +1,42 @@
+package Practicemaventest;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class exceloperation {
+	
+	public void exce() throws IOException
+	{
+		FileInputStream fis = new FileInputStream("‪C:/Users/akshay/Desktop/jii.xlsx");
+		
+		Workbook workbook = new XSSFWorkbook(fis);
+		int sheetCount = workbook.getNumberOfSheets();
+		System.out.println(sheetCount);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		exceloperation obj = new exceloperation();
+		obj.exce();
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

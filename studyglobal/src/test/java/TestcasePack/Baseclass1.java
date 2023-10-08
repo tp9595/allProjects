@@ -1,0 +1,38 @@
+package TestcasePack;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+
+import utilitypackag.ReadConfig;
+
+
+public class Baseclass1 {
+	ReadConfig obj = new ReadConfig();
+	
+	public String urlee ="https://www.saucedemo.com";
+	public String userName ="standard_user";
+	public String Password ="secret_sauce";
+    public static WebDriver driver;
+    //public static Logger logger;	
+	@BeforeClass
+	public void setup()
+	{
+		 System.setProperty("webdriver.chrome.driver","D:/Users/akshay/Downloads/chromedriver_win32/chromedriver.exe");
+	//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//Driver//chromedriver.exe");
+				 driver = new ChromeDriver();
+//				 Logger logger= Logger.getLogger("sauce");
+//				 PropertyConfigurator.configure("logs.properties");
+	}
+	@AfterClass
+	public void teardown ()
+	{
+      // driver.quit();
+	}
+	
+	
+	
+}

@@ -1,0 +1,53 @@
+package selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class checkbox {
+	
+	
+	void openwebpage1( WebDriver driver)
+	{
+		try {
+			String url ="https://rahulshettyacademy.com/AutomationPractice/";
+			//String url ="http://register.rediff.com/register/register.php?FormName=user_details";
+			  driver.get(url);
+			driver.manage().window().maximize();
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}	
+	 
+	void checkbox1 (WebDriver driver)
+	{
+		  WebElement dropdown = driver.findElement(By.id("dropdown-class-example"));
+		  dropdown.click();
+	   Select dro = new Select(dropdown);
+	 //  dro.selectByValue("option1");
+	   dro.selectByIndex(2);
+	}
+	
+	void checkbox2 (WebDriver driver)
+	{
+		  WebElement dropdown = driver.findElement(By.name("DOB_Day459e83ea"));
+		  dropdown.click();
+	   Select dro = new Select(dropdown);
+	   dro.selectByIndex(01);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	    System.setProperty("webdriver.chrome.driver","C:/Users/akshay/Downloads/CHROME/chromedriver.exe");
+	   // System.setProperty("webdriver.chrome.driver", "D:/java software/chromedriver.exe");
+	    WebDriver driver = new ChromeDriver();
+	    checkbox obj = new checkbox ();
+	    obj.openwebpage1(driver);
+	    obj.checkbox1(driver);
+	    
+	    
+	}
+
+}

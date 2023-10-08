@@ -1,0 +1,55 @@
+package variables;
+
+public class reverseclass {
+	
+	
+	
+//	void number()
+//	{
+//		String s = "MADAM";
+//	
+//		char c;
+//		String rev = "";
+//	    for( int i = s.length()-1; i>=0; i--)
+//	    {
+//	    	
+//	    	//System.out.println(s.charAt(i));
+//	     c = s.charAt(i);
+//	      System.out.println(s.charAt(i));
+//	    	rev = rev + c; 
+//	    	System.out.println(rev);
+//	    }
+//	    if(s.equals(rev))
+//	    {
+//	    	System.out.println( "palindrome");
+//	    }	
+//	    else
+//	    {
+//	    	System.out.println("not pallindrome");
+//	    	
+//	    }
+//	    
+//	    System.out.println(rev);
+//	}
+	void reminder()
+	{  
+		int i = 28363, rev = 0;  
+		while(i != 0)   
+		{  
+		int remainder = i % 10;  
+		rev = rev* 10 + remainder;  
+		i = i/10;  
+		}  
+		System.out.println(" reverse of the given number is: " + rev);  
+		}  
+	 
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       reverseclass obj = new reverseclass();
+    	obj.reminder();
+	}
+
+}

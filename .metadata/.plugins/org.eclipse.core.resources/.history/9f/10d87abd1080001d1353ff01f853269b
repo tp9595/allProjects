@@ -1,0 +1,30 @@
+package programpractice;
+
+public class intervivewq1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+String i="i am panakj";
+String b="";
+char ch[]=i.toCharArray();
+String str="";
+for(int a=0;a<ch.length;a++)
+{
+	if (ch[a]=='a')
+		{
+			b=b+"@";	
+			str =str+b;
+			
+			
+		}
+	str=str +ch[a];
+	
+	
+	
+}System.out.println(str);
+		
+		
+		
+	}
+
+}

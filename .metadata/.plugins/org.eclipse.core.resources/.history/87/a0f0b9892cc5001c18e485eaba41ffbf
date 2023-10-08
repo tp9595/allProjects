@@ -1,0 +1,37 @@
+package variables;
+
+public class finalkeyword {
+	//static global variable
+	static int a = 10;
+	static String b="gata";
+	static char c  ='h';
+	static float d =91.3f;
+	
+	
+	//non static global variable
+	//int i = 20;
+	String p="data";
+	char q ='t';
+	float r =90.3f;
+	 void nonstaticmethod()
+	{
+       final  int i = 40;
+	System.out.println(i);
+	//System.out.println(a);
+	}
+	static  void staticmethod()
+		{
+	      final  int g = 9;
+	    System.out.println(g);
+		}
+	 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		staticmethod();
+		finalkeyword obj = new finalkeyword();
+		obj.nonstaticmethod();
+		
+		
+	}
+
+}

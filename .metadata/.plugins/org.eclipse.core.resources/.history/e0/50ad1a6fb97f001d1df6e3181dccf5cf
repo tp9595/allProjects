@@ -1,0 +1,18 @@
+package Stringprogramprac;
+
+public class Occuranceofletter {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s = "tushar padalkar tushar";
+		int count = 0;
+
+		for (int i = 0; i < s.length(); i++) {
+			if (s.charAt(i) == 'a')
+				count++;
+
+		}
+		System.out.println("number of occrancr of a :" + count);
+
+	}
+}

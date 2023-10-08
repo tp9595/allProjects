@@ -1,0 +1,47 @@
+package variables;
+
+public class Pattranprogram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+//int n=5;
+//    for (int i=1;i<=n;i++) {
+//    	// (int j=1;j<=n;j++)   //5 star column 5 row coiumn
+//    		for (int j=1;j<=i;j++)   //incresing trangle
+//    		//	for (int j=i;j<=n;j++)  //decrasing trangle
+//    {
+//		System.out.print("* ");
+//	}
+//    	System.out.println();
+//    }
+
+	//right trangle
+		//number of empty bracket must be match with star bracket
+//	int n=5;
+//    for (int i=1;i<=n;i++) {
+//    	for (int j=i;j<=n;j++)
+//    {
+//		System.out.print("  ");
+//	}
+//    	for (int j=1;j<=i;j++) {
+//    		System.out.print("* ");
+//    	}
+//    	System.out.println();
+//    }
+
+	
+	//right sided triangle
+	int n=5;
+    for (int i=1;i<=n;i++) {
+    	for (int j=1;j<=i;j++)
+    {
+		System.out.print(" ");
+	}
+    	for (int j=i;j<=n;j++) {
+    		System.out.print("* ");
+    	}
+    	System.out.println();
+    }
+   }
+	}

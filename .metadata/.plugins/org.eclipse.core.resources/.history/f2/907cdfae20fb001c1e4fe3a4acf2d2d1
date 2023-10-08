@@ -1,0 +1,43 @@
+package Apitesting.Apiproject;
+
+import static io.restassured.RestAssured.given;
+
+import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+
+public class Httpmethod3 {
+	
+	void get()
+	{
+		String jh ="12";
+		String actualname ="fuchsia rose";
+			String url ="https://reqres.in/";
+			String resource =  "/api/unknown/2";
+			RestAssured.baseURI=url;
+		String resp = given().when().get(resource).then().extract().response().asString();
+		JsonPath gh = new JsonPath(resp);
+	//	let extrea data from jasonpath
+		String gha =gh.getString("data.name");
+		System.out.println(gha);
+		if(actualname.equalsIgnoreCase(gha))
+		{
+			System.out.println("test case pass");
+		}else
+		{
+			System.out.println("test case fail");
+		}
+	
+	
+	
+	}
+	
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Httpmethod3 obj = new Httpmethod3();
+		obj.get();
+	}
+
+}

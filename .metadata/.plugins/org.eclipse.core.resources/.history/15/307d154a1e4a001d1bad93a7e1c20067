@@ -1,0 +1,25 @@
+package com.reqre.utility;
+
+import org.testng.Assert;
+
+import io.restassured.response.Response;
+
+public class restutils {
+
+	
+	
+	public static void checkstatuscode(Response res)	
+	{
+		Assert.assertEquals(res.getStatusCode(),200,"status checked failed");
+	}
+	
+	public static void checkstatuscode(int code ,Response res)	
+	{
+		Assert.assertEquals(res.getStatusCode(),code,"status checked failed");
+	}
+	
+	public static void checkcontenttype(String contentType ,Response res)	
+	{
+		Assert.assertEquals(res.header("content-Type"),contentType,"status checked failed");
+	}
+}

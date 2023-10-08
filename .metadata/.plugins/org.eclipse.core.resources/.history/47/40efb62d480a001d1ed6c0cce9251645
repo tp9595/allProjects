@@ -1,0 +1,38 @@
+package programpractice;
+
+import java.util.Scanner;
+
+public class Reverseclass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a[] = {5,3,4,7};
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("enter a number ");
+		int num =1;
+		// usnig alogorithem
+		int rev =0;
+		while(num!=0)
+		{
+			rev =rev*10+num%10;
+			num = num/10;
+		}
+		
+	// using string buffer method we can directly get the reverse number
+
+	//StringBuffer sb = new StringBuffer(String.valueOf(num));
+	//StringBuffer rev=sb.reverse();
+	
+	
+	StringBuilder df = new StringBuilder();
+	df.append(num);
+	StringBuilder rev = df.reverse();
+	
+	
+	
+	
+	
+		System.out.println("reverse number..." +rev);
+	}
+
+}

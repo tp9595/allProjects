@@ -1,0 +1,30 @@
+package GreenCartproject;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class cart1 {
+WebDriver driver;
+
+public cart1(WebDriver driver)
+{
+	  this.driver = driver;
+}
+
+
+
+	By brocolli = By.xpath("//h4[(text()='Brocolli - 1 Kg')]");
+	
+
+	public WebElement name ()
+	  {
+		  return driver.findElement(brocolli);
+	  }
+	By cart = By.xpath("//*[@class ='cart-icon']");
+	public WebElement cart ()
+	  {
+		  return driver.findElement(cart);
+	  }
+	//By checkout = By.xpath("//button[(text()='PROCEED TO CHECKOUT')]");
+}

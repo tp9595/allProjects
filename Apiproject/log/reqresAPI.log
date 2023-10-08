@@ -1,0 +1,126 @@
+2022-10-12 15:42:57 INFO  ApiTesting:20 - -----Started  TC01_GetUser------
+2022-10-12 15:43:04 INFO  ApiTesting:47 - -----check Responce time ------
+2022-10-12 15:43:04 INFO  ApiTesting:49 - responce time is  ==>2095
+2022-10-12 15:43:04 INFO  ApiTesting:57 - -----check Responce line ------
+2022-10-12 15:43:04 INFO  ApiTesting:59 - status line  is  ==>HTTP/1.1 200 OK
+2022-10-12 15:43:04 INFO  ApiTesting:30 - -----check responce body ------
+2022-10-12 15:43:04 INFO  ApiTesting:32 - responce body==> {
+    "page": 2,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 7,
+            "email": "michael.lawson@reqres.in",
+            "first_name": "Michael",
+            "last_name": "Lawson",
+            "avatar": "https://reqres.in/img/faces/7-image.jpg"
+        },
+        {
+            "id": 8,
+            "email": "lindsay.ferguson@reqres.in",
+            "first_name": "Lindsay",
+            "last_name": "Ferguson",
+            "avatar": "https://reqres.in/img/faces/8-image.jpg"
+        },
+        {
+            "id": 9,
+            "email": "tobias.funke@reqres.in",
+            "first_name": "Tobias",
+            "last_name": "Funke",
+            "avatar": "https://reqres.in/img/faces/9-image.jpg"
+        },
+        {
+            "id": 10,
+            "email": "byron.fields@reqres.in",
+            "first_name": "Byron",
+            "last_name": "Fields",
+            "avatar": "https://reqres.in/img/faces/10-image.jpg"
+        },
+        {
+            "id": 11,
+            "email": "george.edwards@reqres.in",
+            "first_name": "George",
+            "last_name": "Edwards",
+            "avatar": "https://reqres.in/img/faces/11-image.jpg"
+        },
+        {
+            "id": 12,
+            "email": "rachel.howell@reqres.in",
+            "first_name": "Rachel",
+            "last_name": "Howell",
+            "avatar": "https://reqres.in/img/faces/12-image.jpg"
+        }
+    ],
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+2022-10-12 15:43:04 INFO  ApiTesting:39 - -----c ------
+2022-10-12 15:43:04 INFO  ApiTesting:41 - status code ==>200
+2022-10-12 15:43:04 INFO  ApiTesting:67 - -----Finished  TC01_GetUser------- 
+2022-10-12 15:48:47 INFO  ApiTesting:20 - -----Started  TC01_GetUser------
+2022-10-12 15:48:54 INFO  ApiTesting:47 - -----check Responce time ------
+2022-10-12 15:48:54 INFO  ApiTesting:49 - responce time is  ==>2101
+2022-10-12 15:48:54 INFO  ApiTesting:57 - -----check Responce line ------
+2022-10-12 15:48:54 INFO  ApiTesting:59 - status line  is  ==>HTTP/1.1 200 OK
+2022-10-12 15:48:54 INFO  ApiTesting:30 - -----check responce body ------
+2022-10-12 15:48:54 INFO  ApiTesting:32 - responce bodyheck status code==> {
+    "page": 2,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 7,
+            "email": "michael.lawson@reqres.in",
+            "first_name": "Michael",
+            "last_name": "Lawson",
+            "avatar": "https://reqres.in/img/faces/7-image.jpg"
+        },
+        {
+            "id": 8,
+            "email": "lindsay.ferguson@reqres.in",
+            "first_name": "Lindsay",
+            "last_name": "Ferguson",
+            "avatar": "https://reqres.in/img/faces/8-image.jpg"
+        },
+        {
+            "id": 9,
+            "email": "tobias.funke@reqres.in",
+            "first_name": "Tobias",
+            "last_name": "Funke",
+            "avatar": "https://reqres.in/img/faces/9-image.jpg"
+        },
+        {
+            "id": 10,
+            "email": "byron.fields@reqres.in",
+            "first_name": "Byron",
+            "last_name": "Fields",
+            "avatar": "https://reqres.in/img/faces/10-image.jpg"
+        },
+        {
+            "id": 11,
+            "email": "george.edwards@reqres.in",
+            "first_name": "George",
+            "last_name": "Edwards",
+            "avatar": "https://reqres.in/img/faces/11-image.jpg"
+        },
+        {
+            "id": 12,
+            "email": "rachel.howell@reqres.in",
+            "first_name": "Rachel",
+            "last_name": "Howell",
+            "avatar": "https://reqres.in/img/faces/12-image.jpg"
+        }
+    ],
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+2022-10-12 15:48:54 INFO  ApiTesting:39 - -----check status code ------
+2022-10-12 15:48:54 INFO  ApiTesting:41 - status code ==>200
+2022-10-12 15:48:54 INFO  ApiTesting:67 - -----Finished  TC01_GetUser------- 

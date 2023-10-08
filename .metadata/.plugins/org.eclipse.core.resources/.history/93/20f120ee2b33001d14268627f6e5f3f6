@@ -1,0 +1,15 @@
+package Stringprogramprac;
+
+public class String2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//calculate number each number of character in string
+		
+		String str = " tushar";
+		System.out.println(str.charAt(5));
+		
+		
+	}
+
+}

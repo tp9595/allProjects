@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="65250" started-at="2022-07-14T16:12:00 IST" finished-at="2022-07-14T16:13:05 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="65250" started-at="2022-07-14T16:12:00 IST" finished-at="2022-07-14T16:13:05 IST">
+      <class name="myreport.genicreport">
+        <test-method status="PASS" signature="start()[pri:0, instance:myreport.genicreport@2eda0940]" name="start" is-config="true" duration-ms="677" started-at="2022-07-14T16:12:00 IST" finished-at="2022-07-14T16:12:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="driverinvoke()[pri:0, instance:myreport.genicreport@2eda0940]" name="driverinvoke" duration-ms="63452" started-at="2022-07-14T16:12:00 IST" finished-at="2022-07-14T16:13:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverinvoke -->
+        <test-method status="PASS" signature="end()[pri:0, instance:myreport.genicreport@2eda0940]" name="end" is-config="true" duration-ms="1019" started-at="2022-07-14T16:13:04 IST" finished-at="2022-07-14T16:13:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- myreport.genicreport -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

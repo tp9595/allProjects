@@ -1,0 +1,27 @@
+package Apitesting.Apiproject;
+
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.*;
+
+import io.cucumber.java.en.Then;
+
+public class Httpmethod {
+	
+	void getMethod()
+	{
+		String url ="https://reqres.in/";
+		String resource = "/api/users/2";
+		RestAssured.baseURI=url;
+	given().
+	when().get(resource).
+	then();
+	
+	}
+
+	
+	
+	public static void main(String[] args) {
+		Httpmethod obj = new Httpmethod();
+		obj.getMethod();
+	}
+}

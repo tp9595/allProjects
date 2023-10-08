@@ -1,0 +1,8 @@
+package packaA;
+
+public interface interface1 {
+	 default void samemethod();
+     void methodone(int a);
+	void methodone();
+	 
+}

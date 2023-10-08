@@ -1,0 +1,349 @@
+package programpractice;
+
+public class allinonepractice {
+//max number in array
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// maxInArray();
+		// minInArray();
+		// onlyPrintAscendingInGivenArray();
+		// onlyPrintDescendingInGivenArray();
+		// selectionSort();
+		// bubbleSort();
+		// vowels();
+		// secondlargestnumber();
+		// reversestring();
+		// reverchar();
+		// onlyreversenamenotsurname();
+		// firstWordCapital();
+		// firstcapitalsecondsmall();
+		// reverseAndPalindromenumbr();
+		// armstrongNumber();
+		// fibonacii();
+		// oddandeven();
+		//printsquare();
+		missingArray();
+	}
+
+	public static void maxInArray() {
+
+		int a[] = { 5, 2, 85, 92, 30 };
+
+		int max = a[0];
+
+		for (int i = 0; i < a.length; i++) {
+			if (max < a[i]) {
+				max = a[i];
+			}
+		}
+		System.out.println(max);
+
+	}
+
+	public static void minInArray() {
+		int a[] = { 1, 2, 5, 8, 9 };
+		int min = a[0];
+		for (int i = 1; i < a.length; i++) {
+			if (min > a[i]) {
+				min = a[i];
+			}
+		}
+		System.out.println("minimum number" + min);
+	}
+
+	public static void onlyPrintAscendingInGivenArray() {
+		int a[] = { 10, 20, 10, 50, 60 };
+		int firstno = a[0];
+		for (int i = 0; i < a.length; i++) {
+			if (firstno <= a[i]) {
+				firstno = a[i];
+				System.out.println(a[i]);
+			}
+		}
+	}
+
+	public static void onlyPrintDescendingInGivenArray() {
+		int a[] = { 10, 5, 30, 50, 60 };
+		int firstno = a[0];
+		for (int i = 0; i < a.length; i++) {
+			if (firstno >= a[i]) {
+				firstno = a[i];
+				System.out.println(a[i]);
+			}
+		}
+	}
+
+	// selection sort
+	public static void selectionSort() {
+		int ar[] = { 20, 53, 96, 85, 30 };
+		int temp;
+		for (int i = 0; i < ar.length; i++) {
+			for (int j = i + 1; j < ar.length; j++) {
+				if (ar[i] > ar[j]) {
+					temp = ar[i];
+					ar[i] = ar[j];
+					ar[j] = temp;
+
+				} // System.out.println(ar[i]);
+
+			}
+			System.out.println("selection sort" + ar[i]);
+		}
+		System.out.println("print the number at 4thindex" + ar[4]);
+		for (int i = 0; i < ar.length; i++) {
+			System.out.println(ar[i]);
+		}
+	}
+
+	// bubble sort
+	public static void bubbleSort() {
+		int ar[] = { 20, 53, 96, 85, 30 };
+		int temp;
+		for (int i = 0; i < ar.length - 1; i++) {
+			for (int j = 0; j < ar.length - 1; j++) {
+				// if(ar[j-1]<ar[j]) {//for descending
+				if (ar[j] > ar[j + 1]) { // for ascending
+					temp = ar[j];
+					ar[j] = ar[j + 1];
+					ar[j + 1] = temp;
+				}
+			}
+		}
+		for (int i = 0; i < ar.length; i++) {
+			System.out.println(ar[i]);
+		}
+	}
+
+	// count the vowels
+	public static void vowels() {
+		String sd = "tushar";
+		String sd1[] = sd.split("");
+		int vowelcount = 0;
+		for (int i = 0; i < sd1.length; i++) {
+			if (sd1[i].equalsIgnoreCase("a") || sd1[i].equalsIgnoreCase("u")) {
+				vowelcount++;
+				// System.out.println("In given String vowel "+str1[i]+" Present at index " +i);
+				// System.out.println(vowelcount);//answer=12
+			}
+			// System.out.println(vowelcount);answer=011122
+		} // System.out.println(vowelcount);answer =2
+
+	}
+
+	// addiion of two array
+	// missing number in array
+	// second largest number inarray
+	public static void secondlargestnumber() {
+		int a[] = { 23, 45, 24, 34, 65, 85 };
+		int temp, size;
+		size = a.length;
+		for (int i = 0; i < size; i++) {
+			for (int j = i + 1; j < size; j++) {
+				if (a[i] > a[j]) {
+					temp = a[i];
+					a[i] = a[j];
+					a[j] = temp;
+				}
+			}
+		}
+		System.out.println("second hightest number" + a[4]);
+
+	}
+
+	public static void reversestring() {
+		String str1 = "tushar will get a job"; // job a get will tushar
+		String str2[] = str1.split(" ");
+		String rev = "";
+		for (int i = str2.length - 1; i >= 0; i--) {
+			rev = rev + str2[i] + " ";
+
+		}
+		System.out.println(rev);
+	}
+
+	public static void reverchar() {
+		String s = "naman tushar";
+		// no need to use split //String s1[] =s.split("");
+		String rev = "";
+		for (int i = s.length() - 1; i >= 0; i--) {
+			rev = rev + s.charAt(i);
+		}
+		System.out.println(rev);
+
+		if (rev.equals(s)) {
+			System.out.println("string is palindorom");
+		} else {
+			System.out.println("string is not palidrom");
+		}
+	}
+
+	public static void onlyreversenamenotsurname() {
+		String s = "tushar padalkar";
+		String s1[] = s.split(" ");
+
+		String s2 = s1[0];
+		String s3 = s1[1];
+		String rev = "";
+		for (int i = s2.length() - 1; i >= 0; i--) {
+			rev = rev + s2.charAt(i);
+		}
+		System.out.println(rev + " " + s3);
+
+	}
+
+	public static void firstWordCapital() {
+		String str = "tushar will get a jon";
+
+		// String strr=str.toLowerCase();
+		String str1[] = str.split(" ");
+		System.out.println(str1[0].substring(0, 2));
+		String result = "";
+		for (int i = 0; i < str1.length; i++) {
+			result = result + str1[i].substring(0, 1).toUpperCase().concat(str1[i].substring(1) + " ");
+
+		}
+		System.out.println(result);
+
+	}
+
+	public static void firstcapitalsecondsmall() {
+		String str = "tushar";
+
+		for (int i = 0; i < str.length(); i++) {
+			if (i % 2 == 0) {
+				System.out.print(str.toUpperCase().charAt(i));
+			} else {
+				System.out.print(str.toLowerCase().charAt(i));
+			}
+
+		}
+	}
+
+	public static void reverseAndPalindromenumbr() {
+		// int num=123456;
+		int num = 123;
+		int temp = num;
+		int rev = 0;
+
+		while (num > 0) {
+			int rem = num % 10; // 3/2/1
+			rev = rev * 10 + rem;
+			num = num / 10; // 123 12 1
+		}
+		System.out.println(rev);
+		if (rev == temp) {
+			System.out.println("Number is Palindrome");
+		} else {
+			System.out.println("Number is Not Palindrome");
+		}
+	}
+
+	// Armstrong Number
+	public static void armstrongNumber() {
+		int num = 153;
+		int temp = num;
+		int arm = 0;
+
+		while (num > 0) {
+			int rem = num % 10;
+			arm = arm + rem * rem * rem;
+			num = num / 10;
+		}
+		if (temp == arm) {
+			System.out.println("No. is armstrong");
+		} else {
+			System.out.println("No. is not armstrong");
+		}
+	}
+
+	public static void fibonacii() {
+//		int a=0;//0 1 1 2 3 5 8
+//		int b=1;
+//		int temp =1;
+//		System.out.print(a);//0
+//		System.out.print(" "+b);//1
+//		while(temp<55) {
+//			System.out.print(" "+temp);
+//			a=b;
+//			b=temp;
+//			temp=a+b;
+//		}
+
+		int a = 0;
+		int b = 1;
+		int c;
+		System.out.println(a);
+		System.out.println(b);
+		for (int i = 1; i <= 10; i++) {
+			c = a + b;
+			System.out.println("" + c);
+			a = b; // a=b=1 a=b=1 a=b=2
+			b = c; // b=c=1 b=c=2 b=c=3
+		}
+	}
+
+	public static void oddandeven() {
+		int d = 4;
+
+		// int
+
+		if (d % 2 == 0) {
+			System.out.println("even number");
+		} else {
+			System.out.println("odd");
+		}
+
+	}
+
+	public static void printsquare() {
+		int n = 5;
+		for (int i = 1; i<n; i++) {
+
+			for (int j = i; j<=n; j++) {
+				
+					System.out.print(" ");
+				}for (int j = 1; j<=i; j++)
+				{
+					System.out.print("*");
+				}for (int j = 1; j<i; j++)
+				{
+					System.out.print("*");
+				}
+			
+			System.out.println();
+			}
+		for (int i = 1; i<=n; i++) {
+
+			for (int j = 1; j<=i; j++) {
+				
+					System.out.print(" ");
+				}for (int j = i; j<=n; j++)
+				{
+					System.out.print("*");
+				}for (int j = i; j<n; j++)
+				{
+					System.out.print("*");
+				}
+			
+			System.out.println();
+			}
+			//System.out.println();
+		}
+
+	public static void missingArray() {
+		int ar[]= {1,2,5,6,7,8,10};
+		int ogAr[]= {1,2,3,4,5,6,7,8,9,10};
+		int temp=0;
+		for(int i=0;i<ogAr.length;i++) {
+			for(int j=0;j<ar.length;j++) {
+				if(ogAr[i]==ar[j]) {
+					temp=ogAr[i];
+					
+				}else
+				{//if(temp!=ogAr[i])
+					System.out.println(ogAr[i]);
+					}
+			}
+		}
+
+}}

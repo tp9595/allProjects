@@ -1,0 +1,19 @@
+package programpractice;
+
+public class practice {
+
+	
+	public static String[] returnStringArray() {
+		String ar[] = {"abc","def","ghi","\"jkl mno pqr\"","stu","\"xyz uvw shr\""};
+		String arNew[] = new String[ar.length];
+		int j=0;
+		for(int i=0; i<ar.length; i++) {
+		arNew[j]=ar[i];
+		j++;
+		}
+		for(int k=0; k<j; k++) {
+			System.out.println(arNew[k]);
+		}
+		return arNew;
+	}
+}

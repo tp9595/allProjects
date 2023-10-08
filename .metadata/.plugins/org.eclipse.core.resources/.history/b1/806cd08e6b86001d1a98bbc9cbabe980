@@ -1,0 +1,37 @@
+package dropdownpractice;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class dropdown1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver();
+		String url = "https://www.flipkart.com/";
+		driver.get(url);
+		driver.manage().window().maximize();
+		// driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
+		WebElement cart = driver.findElement(By.xpath("//input[@class='_2IX_2- VJZDxU']"));
+		cart.sendKeys("9594368542");
+		WebElement carte = driver.findElement(By.xpath("//input[@class='_2IX_2- _3mctLh VJZDxU']"));
+		carte.sendKeys("Tushar@95");
+		WebElement cartee = driver.findElement(By.xpath("//button[@class='_2KpZ6l _2HKlqd _3AWRsL']"));
+		cartee.click();
+		WebElement drop = driver.findElement(By.xpath("//input[@class='_3704LK']"));
+		drop.sendKeys("tshirt");
+
+	}
+
+}

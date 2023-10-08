@@ -1,0 +1,7 @@
+
+ interface Trafficsingnal  {
+       
+	 void display();
+	
+	
+}

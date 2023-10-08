@@ -1,0 +1,54 @@
+package selenium;
+
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Newwindow {
+	
+	void window(WebDriver driver) 
+	{
+		String url = "https://demoqa.com/browser-windows";
+	    driver.get(url);
+	    driver.manage().window().maximize();
+
+	}
+	void window2(WebDriver driver)
+	{
+		String mainWindow = driver.getWindowHandle();
+				WebElement dyt  = driver.findElement(By.id("tabButton"));
+				dyt.click();
+				Set<String> windows  = driver.getWindowHandles();
+			Iterator itr =windows.iterator();
+			while(itr.hasNext())
+			{
+				String newWindow = (String) itr.next();
+				if(!mainWindow.equalsIgnoreCase(newWindow))
+				{
+					driver.switchTo().window(newWindow);
+				System.out.println(driver.getTitle());
+				WebElement title  = driver.findElement(By.id("sampleHeading"));
+				System.out.println(title.getText());
+				}
+			}
+	
+	}
+	
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver","C:/Users/akshay/Downloads/CHROME/chromedriver.exe");
+		   // System.setProperty("webdriver.chrome.driver", "D:/java software/chromedriver.exe");
+			WebDriver driver = new ChromeDriver();
+			Newwindow obj =new Newwindow();
+			obj.window(driver);
+			obj.window2(driver);
+			
+	}
+
+}

@@ -1,0 +1,51 @@
+package Apitesting.Apiproject;
+
+import static io.restassured.RestAssured.given;
+
+import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+
+public class httpmethod3practice {
+	
+	
+	void get2()
+	{
+		//String jh ="12";
+		String actualname ="549";
+			String url ="https://dummyjson.com/";
+			String resource =  "/products/1";
+			RestAssured.baseURI=url;
+		String resp = given().when().get(resource).then().extract().response().asString();
+		JsonPath gh = new JsonPath(resp);
+	//	let extrea data from jasonpath
+		String gha =gh.getString("object.price");
+		System.out.println(gha);
+		if(actualname.equalsIgnoreCase(gha))
+		{
+			System.out.println("test case pass");
+		}else
+		{
+			System.out.println("test case fail");
+		}
+	
+	
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		httpmethod3practice obj = new httpmethod3practice();
+		obj.get2();
+	}
+
+}

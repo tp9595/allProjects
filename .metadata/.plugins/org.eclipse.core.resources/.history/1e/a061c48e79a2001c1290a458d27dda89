@@ -1,0 +1,28 @@
+package packaA;
+
+public class parentclass {
+	
+	
+	public void normalmethod()
+	{
+		
+		System.out.println("this is normal method");
+		
+	}
+	
+	public final void finalmethod()
+	{
+		System.out.println("this is final method");
+	}
+	
+	public static void staicmethod()
+	{
+		System.out.println("this is static method");
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

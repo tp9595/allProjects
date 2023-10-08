@@ -1,0 +1,58 @@
+package collectionpratice;
+
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class SetArraylist {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Set<Integer> set = new HashSet<>();
+		set.add(8);
+		set.add(8);
+		set.add(10);
+		set.add(9);
+		
+		System.out.println(set);
+		set.remove(9);
+		System.out.println(set);
+		set.contains(10);
+		set.isEmpty();
+		set.size();
+	//	Set<Integer> seta = new LinkedHashset<>();
+		Set<Integer> setu = new LinkedHashSet<>();
+		Set<Integer> setuu = new TreeSet<>();
+		setuu.add(8);
+		setuu.add(88);
+		setuu.add(10);
+		setuu.add(9);
+	System.out.println(setuu);
+	Set <Integer> first = new HashSet<Integer>();
+	first.addAll(Arrays.asList(new Integer [] {1,2,3,4,5}));
+	
+	Set <Integer> second = new HashSet<Integer>();
+	second.addAll(Arrays.asList(new Integer [] {4,5,6,7}));
+	
+	Set <Integer> union = new HashSet<Integer>(first);
+	union.addAll(second);
+	System.out.println(union);
+	
+	Set <Integer> intersection = new HashSet<Integer>(first);
+	intersection.retainAll(second);
+	System.out.println(intersection);
+
+	Set <Integer> duplicate = new HashSet<Integer>(first);
+	duplicate.removeAll(second);
+	System.out.println(duplicate);
+	
+	
+	
+	
+	}
+
+}

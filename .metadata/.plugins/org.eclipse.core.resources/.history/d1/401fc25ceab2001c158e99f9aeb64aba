@@ -1,0 +1,30 @@
+package variables;
+
+public class Exceptionalclass {
+	  
+	void ArithmeticException()
+	{
+		int i =10;
+		int k = 1/0;
+	   System.out.println(i);  
+	}
+	
+	void testnull()  //null pont exception
+	{
+		String s = null;
+		System.out.println(s.length());
+	}
+	
+	void test()  
+	{
+		String s = "hello";
+		System.out.println(s.charAt(10));
+	}
+	
+	public static void main(String[] args) {
+		Exceptionalclass  obj = new Exceptionalclass ();
+		obj.test();
+		
+	}
+
+}

@@ -1,0 +1,2 @@
+cd D:\APIAutomatiom\APIAutomationFramework
+mvn clean test

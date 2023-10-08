@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ReqresAPISuite]">
+  <test thread-count="5" name="ReqresAPITest(failed)">
+    <classes>
+      <class name="com.reqres.testCases.TC01_Get_User">
+        <methods>
+          <include name="getAllUser"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="checkResponseTime"/>
+        </methods>
+      </class> <!-- com.reqres.testCases.TC01_Get_User -->
+    </classes>
+  </test> <!-- ReqresAPITest(failed) -->
+</suite> <!-- Failed suite [ReqresAPISuite] -->

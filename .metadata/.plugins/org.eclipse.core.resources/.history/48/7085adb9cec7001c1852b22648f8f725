@@ -1,0 +1,22 @@
+package variables;
+
+public class maths {
+	int   tushar()
+	{ 
+		System.out.println("50");
+	  return 50;
+	 
+	}
+
+	public static void main(String[] args) 
+	{
+		maths obj = new maths();
+		obj.tushar();
+		
+   
+  
+   
+   
+	}
+
+}

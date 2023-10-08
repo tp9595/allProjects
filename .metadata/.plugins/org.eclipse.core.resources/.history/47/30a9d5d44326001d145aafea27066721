@@ -1,0 +1,77 @@
+package Practicemaventest;
+
+import java.io.FileInputStream;
+//import java.io.FileNotFoundException;
+import java.io.IOException;
+
+//import org.apache.poi.sl.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class exceloperation {
+	
+	public void exce() throws IOException
+	{
+		FileInputStream fis = new FileInputStream("‪excelfile/jii.xlsx");
+		 Workbook workbook = WorkbookFactory.create(fis);
+		// WorkbookFactory workbook = new XSSFWorkbook(fis);
+		
+		int sheetCount = workbook.getNumberOfSheets();
+		System.out.println(sheetCount);
+		System.out.println(workbook.getActiveSheetIndex());
+		for(int i=0; i < sheetCount; i++)
+		{
+			System.out.println(workbook.getSheetName(sheetCount));
+		}
+	}
+	
+		
+		
+	private void rowopern() throws IOException {
+		// TODO Auto-generated method stub
+   FileInputStream fis = new FileInputStream("‪C:\\Users\\akshay\\Desktop\\jii.xlsx");
+   Workbook workbook = new XSSFWorkbook(fis);
+  Sheet sheet = workbook.getSheet("tush");
+ //  int rowcount =sheet.
+		
+	}
+
+	
+	private void cellopration() throws IOException {
+		// TODO Auto-generated method stub
+   FileInputStream fis = new FileInputStream("‪C:\\Users\\akshay\\Desktop\\jii.xlsx");
+   Workbook workbook = new XSSFWorkbook(fis);
+   Sheet sheet =  workbook.getSheet("tush");
+  // int  =sheet.ge
+		///  row =row.getRowNum();
+		 //  row.getLastCellNum();
+		//   for(int i=0; i< row.getRowNum();i++)
+		   {
+		//	   System.out.println(row.getCell(i).getStringCellValue());
+		   }
+		
+	}
+
+
+
+
+
+
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		exceloperation obj = new exceloperation();
+		obj.exce();
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

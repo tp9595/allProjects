@@ -1,0 +1,20 @@
+package Practicemaven;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+
+public class Practiceglobalsqa {
+WebDriver driver;
+	
+	
+	By name =By.id("g2599-name");
+	 WebElement name ();
+	 {
+		 
+	 }
+	
+
+
+}

@@ -1,0 +1,44 @@
+package shadabcucumberproject;
+
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
+
+public class postrequest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String userName ="smith";
+		String job ="sdet";
+		String responcebody =	RestAssured.given()
+				
+				.baseUri("https://reqres.in/")
+				.basePath("api/users")
+				.body("{\r\n"
+						+ "    \"name\": \""+userName+"\",\r\n"
+						+ "    \"job\": \""+job+"\",\r\n"
+						+ "    \"id\": \"305\",\r\n"
+						+ "    \"createdAt\": \"2022-10-11T05:15:32.020Z\"\r\n"
+						+ "}")
+				.contentType(ContentType.JSON)
+				//hit the request and get the responce
+				.post()
+				//validate the response
+				.then()
+				.extract()
+				.body()
+				.asPrettyString();
+			 System.out.println(responcebody);
+			 
+			 
+			 
+			 JsonPath js= new  JsonPath (responcebody);
+			String df= js.getString("name");
+			
+			String jo= js.getString("job");
+			System.out.println(df.equals(userName));
+			System.out.println(jo.equals(job));
+	}
+
+}
